@@ -1,0 +1,96 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #c8981e;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+.main-header {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-family: poppins;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    color: #4B2C20;
+}
+.category-name{
+    margin: 20px 0 10px 0;
+    font-size: 1.5em;
+    font-family: poppins;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #4B2C20;
+    border-bottom: 2px solid #4B2C20;
+}
+.product-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 15px 0;
+}
+.product-card{
+    flex: 0 1 180px;
+    background-color: #fff;
+    padding: 1em;
+    box-shadow: 0 4px 15px;
+    font-family: 'Kantumruy pro', sans-serif;
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+.product-card img {
+    max-width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.product-card h4 {
+    font-size: 1.2em;
+    margin: 0.8em 0 0.3em;
+    color: #4B2C20;
+    font-weight: bold;
+}
+.product-card div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.product-card span {
+    color: #D48444;
+    font-weight: bold;
+}
+.product-card button {
+    background-color: #4B2C20;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.product-card:hover {
+    background-color: #4B2C20;
+    color: #d90ce8;
+}
+.product-card:hover h4,
+.product-card:hover span {
+    color: #fff;
+}
+.product-card:hover button {
+     color: #D48444;
+    background-color: #321002;
+}
+@media screen and (max-width: 576px) {
+    .product-card {
+        font-size: 0.9em;
+    }
+
+}
